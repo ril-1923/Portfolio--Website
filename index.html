@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Morgan &mdash; Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">AM<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HOME / HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Frontend Developer &amp; Design Enthusiast</p>
+      <h1>I build clean, fast<br>interfaces for the web.</h1>
+      <p class="hero-sub">Hi, I'm Alex Morgan &mdash; a self-taught developer who loves turning
+        ideas into interfaces people enjoy using. This site is a running record of what I'm
+        building and learning.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-avatar" aria-hidden="true">
+      <div class="avatar-ring">
+        <!-- Replace with: <img src="images/profile.jpg" alt="Alex Morgan"> -->
+        <span class="avatar-initials">AM</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about">
+    <div class="section-heading">
+      <span class="section-number">01</span>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="images/about-photo.jpg" alt="Alex Morgan working at a desk"
+             onerror="this.src='https://via.placeholder.com/420x520/0F3D3E/F7F5F0?text=Your+Photo'">
+      </div>
+      <div class="about-text">
+        <p>I'm a frontend developer based in Tamil Nadu, currently finishing my degree in
+          Computer Science. I got into web development after rebuilding my college club's
+          website as a side project &mdash; and I haven't stopped building since.</p>
+        <p>I care about writing HTML and CSS that's readable, accessible, and doesn't fall
+          apart on a small screen. Outside of code, I sketch layouts on paper before I ever
+          open an editor.</p>
+        <ul class="about-facts">
+          <li><strong>Location:</strong> Tiruppur, Tamil Nadu, India</li>
+          <li><strong>Education:</strong> B.Sc. Computer Science, Final Year</li>
+          <li><strong>Focus:</strong> Responsive web design &amp; UI development</li>
+          <li><strong>Availability:</strong> Open to internships</li>
+        </ul>
+        <a href="#" class="btn btn-outline btn-small">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills">
+    <div class="section-heading">
+      <span class="section-number">02</span>
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-content">
+      <table class="skills-table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Category</th>
+            <th>Proficiency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5</td>
+            <td>Markup</td>
+            <td><div class="bar"><span style="width: 90%"></span></div></td>
+          </tr>
+          <tr>
+            <td>CSS3 / Flexbox / Grid</td>
+            <td>Styling</td>
+            <td><div class="bar"><span style="width: 85%"></span></div></td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Scripting</td>
+            <td><div class="bar"><span style="width: 65%"></span></div></td>
+          </tr>
+          <tr>
+            <td>Responsive Design</td>
+            <td>UI/UX</td>
+            <td><div class="bar"><span style="width: 80%"></span></div></td>
+          </tr>
+          <tr>
+            <td>Git &amp; GitHub</td>
+            <td>Tools</td>
+            <td><div class="bar"><span style="width: 70%"></span></div></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="skills-tools">
+        <h3>Tools I reach for</h3>
+        <ul class="tag-list">
+          <li>VS Code</li>
+          <li>Figma</li>
+          <li>Chrome DevTools</li>
+          <li>GitHub</li>
+          <li>Netlify</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects">
+    <div class="section-heading">
+      <span class="section-number">03</span>
+      <h2>Projects</h2>
+    </div>
+    <div class="project-grid">
+      <article class="project-card">
+        <img src="images/project1.jpg" alt="Screenshot of the campus event tracker project"
+             onerror="this.src='https://via.placeholder.com/500x320/8FA998/1B1B1B?text=Project+One'">
+        <div class="project-body">
+          <h3>Campus Event Tracker</h3>
+          <p>A responsive site for finding and RSVP-ing to college events, built with
+            semantic HTML and a mobile-first CSS layout.</p>
+          <div class="project-links">
+            <a href="#">Live demo</a>
+            <a href="#">Source code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="images/project2.jpg" alt="Screenshot of the recipe finder project"
+             onerror="this.src='https://via.placeholder.com/500x320/8FA998/1B1B1B?text=Project+Two'">
+        <div class="project-body">
+          <h3>Recipe Finder</h3>
+          <p>A searchable recipe layout using CSS Grid, with a flexbox filter bar and
+            hover-reveal ingredient cards.</p>
+          <div class="project-links">
+            <a href="#">Live demo</a>
+            <a href="#">Source code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="images/project3.jpg" alt="Screenshot of the personal budget dashboard project"
+             onerror="this.src='https://via.placeholder.com/500x320/8FA998/1B1B1B?text=Project+Three'">
+        <div class="project-body">
+          <h3>Budget Dashboard</h3>
+          <p>A clean expense-tracking dashboard interface, focused on readable tables and
+            a calm, low-contrast color palette.</p>
+          <div class="project-links">
+            <a href="#">Live demo</a>
+            <a href="#">Source code</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="section-heading">
+      <span class="section-number">04</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>Have a project in mind, or just want to say hello? My inbox is open.</p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:alex.morgan@example.com">alex.morgan@example.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li><strong>Location:</strong> Tiruppur, Tamil Nadu, India</li>
+        </ul>
+        <ul class="social-list">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?">
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Alex Morgan. Built with HTML &amp; CSS.</p>
+  </footer>
+
+  <script>
+    // Simple mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+    });
+    links.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => links.classList.remove('open'));
+    });
+  </script>
+</body>
+</html>
